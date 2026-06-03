@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Docker-Proxied",
+            "includePath": [
+                "${workspaceRoot}/**",
+                "${workspaceRoot}/docker-include/**"
+            ],
+            "compilerPath": "" 
+        }
+    ],
+    "version": 4
+}
