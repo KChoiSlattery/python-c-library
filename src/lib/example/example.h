@@ -23,4 +23,13 @@ float mult(float x, float y);
 /// @return the sum of all elements of arr
 float sum_arr(float *arr, int len);
 
+/// @brief The outer product of v and u, vu^T. This is an example of a function that takes multiple array inputs and places its output in an array.
+/// @param out array to populate with output
+/// @param u
+/// @param len_u number of elements in u
+/// @param v
+/// @param len_v number of elements in v
+/// @return void
+float outer_product(float *out, float *u, int len_u, float*v, int len_v);
+
 #endif /* __EXAMPLE_FUNCS_H__ */

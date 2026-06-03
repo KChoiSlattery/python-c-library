@@ -19,7 +19,7 @@ docker compose up -d
 Connect to running service and use shell:
 
 ```sh
-docker compose exec env sh
+docker compose exec env bash
 ```
 
 Connect to running service and use shell with virtual environment:

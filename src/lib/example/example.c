@@ -15,3 +15,5 @@ float sum_arr(float *arr, int len)
     }
     return out;
 }
+
+// TODO: write outer_product 

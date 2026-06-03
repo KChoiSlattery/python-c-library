@@ -3,6 +3,7 @@
 
 int main()
 {
-  printf("Ran main file!\n");
+  printf("Running main file...\n");
+  printf("Output of mult() is %f\n", mult(4.2, 5.8));
   return 0;
 }
