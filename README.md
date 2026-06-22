@@ -2,6 +2,14 @@
 
 Experimenting with ways to make a C backend for scientific computing in Python. Right now, using the ctypes example from [Writing a C/C++ extension for Python code](https://softwaremill.com/writing-a-c-c-extension-for-python-code/).
 
+## Core tools used
+
+- Build environment: Debian Docker container
+- Language: C++
+- Build system: Meson
+- Python bindings: Pybind11
+- Linear Algebra: Eigen
+
 ## Developer Instructions
 
 Build the Docker image:
