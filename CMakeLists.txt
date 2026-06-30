@@ -22,15 +22,18 @@ set(EIGEN_MPL2_ONLY ON)
 set(EIGEN_BUILD_PKGCONFIG OFF)
 set(EIGEN_BUILD_DOC OFF)
 
-# Make library "lib"
-# add_library(lib STATIC src/lib/lib.cpp src/lib/lib.hpp)
-# target_include_directories(lib PUBLIC src/lib)
-# target_compile_features(lib PUBLIC cxx_std_20)
+# Make library "example"
+add_library(example STATIC src/example/example.cpp src/example/example.hpp)
+target_include_directories(example PUBLIC src/example)
+target_compile_features(example PUBLIC cxx_std_20)
+target_link_libraries(example PRIVATE Eigen3::Eigen)
 
 # Make the module
-pybind11_add_module(python_c_library src/example.cpp)
+pybind11_add_module(python_c_library src/bindings.cpp)
 
+# Link eigen and custom libraries
 target_link_libraries(python_c_library PRIVATE Eigen3::Eigen)
+target_link_libraries(python_c_library PRIVATE example)
 
 install(TARGETS python_c_library
     LIBRARY DESTINATION .
