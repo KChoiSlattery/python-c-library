@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "intelliSenseMode": "windows-gcc-x64",
+            "includePath": [
+                "C:/Users/kchoislattery3/Desktop/cpp_include/eigen-master",
+                "C:/Users/kchoislattery3/Desktop/cpp_include/pybind11-master/include",
+                "C:/Users/kchoislattery3/AppData/Local/Python/pythoncore-3.14-64/include"
+            ]
+        }
+    ],
+    "version": 4
+}
